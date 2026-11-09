@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Zihnify",
+    "slug": "Zihnify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.zihnify.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "Zihnify may send an optional evening reminder for a short round. Notifications stay off until you turn reminders on."
+      }
+    },
+    "android": {
+      "package": "com.zihnify.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F5F1E9",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-monochrome.png",
+          "color": "#29483B",
+          "defaultChannel": "streak",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F5F1E9",
+          "image": "./assets/icon.png",
+          "imageWidth": 180,
+          "dark": {
+            "backgroundColor": "#121814",
+            "image": "./assets/icon.png"
+          }
+        }
+      ]
+    ]
+  }
+}
